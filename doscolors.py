@@ -84,8 +84,6 @@ def color(foreground, background):
 	colors = combine(foreground, background)
 	set_console_colors(colors)
 
-
-
 def colored(foreground,background):
 	def decorate(function):
 		def wrap(*args, **kwargs):
@@ -148,6 +146,7 @@ class Colors(object):
 	navy = darkblue
 
 default_color = current_color()
+
 __all__ = ["background",
 	"default_color",
 	"color",

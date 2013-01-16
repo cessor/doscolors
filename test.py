@@ -1,5 +1,9 @@
 from doscolors import *
 
+global default_color
+
+default_color = current_color()
+
 @background(Colors.red)
 def error(text):
 	print text
